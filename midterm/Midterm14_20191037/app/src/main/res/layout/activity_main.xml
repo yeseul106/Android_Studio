@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow>
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/icon_close"/>
+            <TextView
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="글쓰기"/>
+            <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_ok"/>
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:layout_weight="1"
+                android:hint="제목"></EditText>
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:layout_weight="1"
+                android:hint="소제목"></EditText>
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:layout_weight="1"
+                android:hint="내용을 입력하세요"></EditText>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
